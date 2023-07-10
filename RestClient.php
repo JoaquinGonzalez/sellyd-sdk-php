@@ -128,4 +128,12 @@ class RestClient
 	"body" => $resData
 	];
     }
+
+    public function get($opts) {
+	    return $this->exec("GET", $opts);
+    }
+
+    public function post($opts) {
+	    return $this->exec("POST", $opts);
+    }
 }
