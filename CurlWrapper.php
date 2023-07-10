@@ -18,7 +18,7 @@ class CurlWrapper
 
     public function SetOpt($name, $value)
     {
-        curl_setopt($this->handle, $name, $value);
+        return curl_setopt($this->handle, $name, $value);
     }
 
     public function Exec()
