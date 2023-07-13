@@ -1,0 +1,17 @@
+{
+    "name": "sellyd/sellyd-sdk-php",
+    "type": "library",
+    "license": "GPL V3",
+    "autoload": {
+        "psr-4": {
+            "Sellyd\\SellydSdkPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Joaquin Gonzalez",
+            "email": "njoaquindev@sellyd.com"
+        }
+    ],
+    "require": {}
+}
