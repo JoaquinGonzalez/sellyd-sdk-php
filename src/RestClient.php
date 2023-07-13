@@ -1,4 +1,9 @@
 <?php
+/*
+ * RestClient.php
+ * Copyright (c) 2023 Joaquin Gonzalez <joaquin@sellyd.com>
+ * @license GPL V3
+ */
 
 namespace Sellyd;
 

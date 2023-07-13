@@ -1,4 +1,9 @@
 <?php
+/*
+ * CurlWrapper.php
+ * Copyright (c) 2023 Joaquin Gonzalez <joaquin@sellyd.com>
+ * @license GPL V3
+ */
 
 namespace Sellyd;
 
@@ -10,7 +15,7 @@ class CurlWrapper
 
 	public function __construct(string $uri = null)
 	{
-		if (extension_loaded("curl")) {
+		if (!extension_loaded("curl")) {
 			throw new Exception("cURL is not loaded.");
 		}
 

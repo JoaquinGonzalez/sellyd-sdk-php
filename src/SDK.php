@@ -1,19 +1,15 @@
 <?php
+/*
+ * SDK.php
+ * Copyright (c) 2023 Joaquin Gonzalez <joaquin@sellyd.com>
+ * @license GPL V3
+ */
 
 namespace Sellyd;
 
 class SDK
 {
-	protected static $restClient;
 	protected static $apiKey;
-
-	/*
-	 * @return void
-	 */
-	public function init() : void
-	{
-		self::$restClient = new RestClient();
-	}
 
 	/*
 	 * @param $key string
@@ -30,13 +26,5 @@ class SDK
 	public static function getApiKey() : string
 	{
 		return self::$apiKey;
-	}
-
-	/*
-	 * @return RestClient
-	 */
-	public static function getRestClient() : RestClient
-	{
-		return self::$restClient;
 	}
 }
